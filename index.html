@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests;">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="no-referrer-when-downgrade">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), usb=()">
+    <meta name="theme-color" content="#f8f7f3">
+    <meta name="description" content="Create a beautiful personal portfolio in minutes with Portfolio Bnao.">
+    <title>Portfolio Bnao — Make your portfolio yours</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <noscript style="position:fixed;top:0;left:0;width:100%;height:100%;background:#f8f7f3;color:#23231f;display:flex;align-items:center;justify-content:center;font-size:16px;font-family:Arial,sans-serif;z-index:9999">
+      <div style="text-align:center;max-width:320px;padding:20px">
+        <p><strong>JavaScript is required</strong> to use Portfolio Bnao.</p>
+        <p style="color:#77756d;font-size:14px">Enable JavaScript in your browser settings to create your portfolio.</p>
+      </div>
+    </noscript>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Portfolio Bnao home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>portfolio<span class="brand-light">bnao</span></span>
+      </a>
+      <nav class="topbar-actions" aria-label="Main navigation">
+        <span class="save-status"><span class="status-dot"></span><span id="saveStatus">Your work saves automatically</span></span>
+        <div class="nav-dropdown">
+          <button class="text-link nav-dropdown-trigger" aria-label="Help menu" aria-expanded="false" aria-haspopup="menu">
+            Help & Docs <span aria-hidden="true">↓</span>
+          </button>
+          <div class="nav-dropdown-menu" role="menu" hidden>
+            <a href="#" class="dropdown-item" role="menuitem" data-action="scroll-to-builder">
+              <span class="item-title">Get Started</span>
+              <span class="item-desc">Quick steps to create your portfolio</span>
+            </a>
+            <a href="HOW_TO_USE.md" target="_blank" class="dropdown-item" role="menuitem">
+              <span class="item-title">📚 How to Use</span>
+              <span class="item-desc">Complete step-by-step guide</span>
+            </a>
+            <a href="README.md" target="_blank" class="dropdown-item" role="menuitem">
+              <span class="item-title">📖 README</span>
+              <span class="item-desc">Features & technical info</span>
+            </a>
+            <a href="SECURITY.md" target="_blank" class="dropdown-item" role="menuitem">
+              <span class="item-title">🔒 Security Info</span>
+              <span class="item-desc">Privacy & security practices</span>
+            </a>
+            <a href="SECURITY-AUDIT-REPORT.md" target="_blank" class="dropdown-item" role="menuitem">
+              <span class="item-title">📋 Security Audit</span>
+              <span class="item-desc">Detailed security report</span>
+            </a>
+            <a href="SECURITY-ENHANCEMENTS.md" target="_blank" class="dropdown-item" role="menuitem">
+              <span class="item-title">⚙️ Security Enhancements</span>
+              <span class="item-desc">What's been improved</span>
+            </a>
+          </div>
+        </div>
+        <a class="text-link" href="#builder">Build <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> YOUR CORNER OF THE INTERNET</div>
+          <h1 id="page-title">A little about you.<br><span>A lot to show.</span></h1>
+          <p>Turn what you do into a portfolio you’re proud to share. No code, no fuss — just you.</p>
+        </div>
+        <div class="intro-note" aria-label="Three simple steps">
+          <span class="note-sparkle" aria-hidden="true">✳</span>
+          <span>Made for your next<br>big thing.</span>
+        </div>
+      </section>
+
+      <section class="guide-section" id="guide" aria-labelledby="guide-title">
+        <div class="guide-container">
+          <h2 id="guide-title">How to Use Portfolio Bnao</h2>
+          <div class="guide-grid">
+            <div class="guide-card">
+              <div class="guide-number">1</div>
+              <h3>Fill in Your Details</h3>
+              <p>Scroll down and enter your name, role, contact info, professional experience, education, skills, and project details. You can customize everything.</p>
+            </div>
+            <div class="guide-card">
+              <div class="guide-number">2</div>
+              <h3>Watch the Live Preview</h3>
+              <p>See your portfolio update instantly on the right as you type. Choose your favorite color theme and font style to personalize your look.</p>
+            </div>
+            <div class="guide-card">
+              <div class="guide-number">3</div>
+              <h3>Add Your Photo</h3>
+              <p>Upload a profile photo (JPEG, PNG, or WebP). It'll be automatically resized and embedded in your portfolio.</p>
+            </div>
+            <div class="guide-card">
+              <div class="guide-number">4</div>
+              <h3>Auto-Save Works</h3>
+              <p>Your work is automatically saved to your browser. Come back anytime to edit—your draft will still be there.</p>
+            </div>
+            <div class="guide-card">
+              <div class="guide-number">5</div>
+              <h3>Download Your Portfolio</h3>
+              <p>Click "Make my portfolio" at the bottom to download a complete HTML file. Open it anywhere—no server needed.</p>
+            </div>
+            <div class="guide-card">
+              <div class="guide-number">6</div>
+              <h3>Share or Host</h3>
+              <p>Email your portfolio file, upload it to GitHub Pages, or use any static hosting service. Your portfolio works completely offline.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="workspace" id="builder" aria-label="Portfolio builder">
+        <div class="editor-panel">
+          <div class="panel-heading">
+            <div>
+              <div class="step-label"><span>01</span> &nbsp; YOUR STORY</div>
+              <h2>Let's make it yours</h2>
+              <p class="panel-subtitle">The little details that make you, you.</p>
+            </div>
+            <span class="edit-icon" aria-hidden="true">✎</span>
+          </div>
+
+          <form id="portfolioForm">
+            <div class="field-row">
+              <label class="field">
+                <span>Your name <span class="required">*</span></span>
+                <input name="name" type="text" placeholder="e.g. Aanya Sharma" autocomplete="name" required maxlength="60">
+              </label>
+              <label class="field">
+                <span>What do you do?</span>
+                <input name="role" type="text" placeholder="e.g. Product designer" maxlength="80">
+              </label>
+            </div>
+            <div class="field-row">
+              <label class="field">
+                <span>Your email</span>
+                <input name="email" type="email" placeholder="hello@example.com" autocomplete="email" maxlength="120">
+              </label>
+              <label class="field">
+                <span>Mobile number</span>
+                <input name="phone" type="tel" placeholder="e.g. +91 98765 43210" autocomplete="tel" maxlength="30">
+              </label>
+            </div>
+            <div class="field-row">
+              <label class="field">
+                <span>Based in</span>
+                <input name="location" type="text" placeholder="e.g. Jaipur, India" autocomplete="address-level2" maxlength="80">
+              </label>
+              <div class="field photo-field">
+                <span>Profile photo <span class="muted-label">(optional)</span></span>
+                <div class="photo-control">
+                  <img id="photoThumbnail" class="photo-thumbnail" alt="" hidden>
+                  <label class="photo-button" for="profilePhotoFile">Choose a photo</label>
+                  <input id="profilePhotoFile" type="file" accept="image/jpeg,image/png,image/webp">
+                  <button class="remove-photo" id="removePhoto" type="button" hidden>Remove</button>
+                </div>
+                <input name="profilePhoto" type="hidden">
+                <span class="field-hint">JPG, PNG or WebP. Kept on this device.</span>
+              </div>
+            </div>
+            <label class="field">
+              <span>Professional summary</span>
+              <textarea name="about" rows="3" placeholder="A short introduction about your experience, strengths, and the work you want to do…" maxlength="700"></textarea>
+              <span class="field-hint"><span id="aboutCount">0</span>/700</span>
+            </label>
+
+            <div class="section-divider">
+              <span class="step-label"><span>02</span> &nbsp; EXPERIENCE & EDUCATION</span>
+              <span class="divider-line"></span>
+            </div>
+            <div class="field-row detail-textareas">
+              <label class="field">
+                <span>Work experience</span>
+                <textarea name="experience" rows="4" placeholder="One role per line, for example:&#10;Product Designer — Acme, 2022–2025&#10;Led design for the mobile app" maxlength="1200"></textarea>
+                <span class="field-hint">Add one role or detail per line.</span>
+              </label>
+              <label class="field">
+                <span>Education</span>
+                <textarea name="education" rows="4" placeholder="One qualification per line, for example:&#10;B.Des, NID Ahmedabad — 2022&#10;Focus: Communication Design" maxlength="900"></textarea>
+                <span class="field-hint">Add one qualification or detail per line.</span>
+              </label>
+            </div>
+            <div class="field-row detail-textareas">
+              <label class="field">
+                <span>Technical skills <span class="muted-label">(separate with commas)</span></span>
+                <input name="skills" type="text" placeholder="e.g. Figma, React, SQL" maxlength="300">
+              </label>
+              <label class="field">
+                <span>Other skills <span class="muted-label">(separate with commas)</span></span>
+                <input name="otherSkills" type="text" placeholder="e.g. Leadership, writing, teamwork" maxlength="300">
+              </label>
+            </div>
+            <label class="field">
+              <span>Hobbies and interests <span class="muted-label">(separate with commas)</span></span>
+              <input name="hobbies" type="text" placeholder="e.g. Photography, hiking, reading" maxlength="220">
+            </label>
+
+            <div class="section-divider">
+              <span class="step-label"><span>03</span> &nbsp; YOUR WORK</span>
+              <span class="divider-line"></span>
+            </div>
+            <div class="project-fields">
+              <label class="field">
+                <span>Project one</span>
+                <input name="project1" type="text" placeholder="e.g. A better way to find books" maxlength="90">
+              </label>
+              <label class="field project-description">
+                <span>What was it about?</span>
+                <input name="project1Description" type="text" placeholder="A sentence about what you made…" maxlength="180">
+              </label>
+              <label class="field">
+                <span>Project two <span class="muted-label">(optional)</span></span>
+                <input name="project2" type="text" placeholder="e.g. Local Roots" maxlength="90">
+              </label>
+              <label class="field project-description">
+                <span>What was it about?</span>
+                <input name="project2Description" type="text" placeholder="A sentence about what you made…" maxlength="180">
+              </label>
+            </div>
+
+            <div class="section-divider">
+              <span class="step-label"><span>04</span> &nbsp; YOUR LINKS & DOCUMENTS</span>
+              <span class="divider-line"></span>
+            </div>
+            <div class="field-row">
+              <label class="field">
+                <span>LinkedIn</span>
+                <input name="linkedin" type="url" placeholder="https://linkedin.com/in/you" maxlength="200">
+              </label>
+              <label class="field">
+                <span>GitHub</span>
+                <input name="github" type="url" placeholder="https://github.com/you" maxlength="200">
+              </label>
+            </div>
+            <div class="field-row">
+              <label class="field">
+                <span>Personal website</span>
+                <input name="website" type="url" placeholder="https://yourwebsite.com" maxlength="200">
+              </label>
+              <label class="field">
+                <span>Additional link label</span>
+                <input name="otherLinkLabel" type="text" placeholder="e.g. Instagram, Behance" maxlength="35">
+              </label>
+            </div>
+            <label class="field">
+              <span>Additional link URL</span>
+              <input name="otherLink" type="url" placeholder="https://example.com/profile" maxlength="200">
+            </label>
+            <div class="field-row">
+              <label class="field">
+                <span>Resume link</span>
+                <input name="resume" type="url" placeholder="Link to your resume PDF" maxlength="300">
+              </label>
+              <label class="field">
+                <span>Certificate link</span>
+                <input name="certificate" type="url" placeholder="Link to a certificate or credential" maxlength="300">
+              </label>
+            </div>
+
+            <div class="section-divider theme-divider">
+              <span class="step-label"><span>05</span> &nbsp; YOUR VIBE</span>
+              <span class="divider-line"></span>
+            </div>
+            <fieldset class="theme-picker">
+              <legend>Pick a color palette</legend>
+              <label class="theme-option">
+                <input type="radio" name="theme" value="violet" checked>
+                <span class="theme-swatch swatch-violet"></span><span>Soft violet</span>
+              </label>
+              <label class="theme-option">
+                <input type="radio" name="theme" value="green">
+                <span class="theme-swatch swatch-green"></span><span>Fresh green</span>
+              </label>
+              <label class="theme-option">
+                <input type="radio" name="theme" value="orange">
+                <span class="theme-swatch swatch-orange"></span><span>Warm peach</span>
+              </label>
+            </fieldset>
+            <label class="field font-field">
+              <span>Portfolio font</span>
+              <select name="font">
+                <option value="modern">Modern sans</option>
+                <option value="editorial">Editorial serif</option>
+                <option value="classic">Classic clean</option>
+                <option value="mono">Modern mono</option>
+              </select>
+            </label>
+
+            <div class="form-footer">
+              <button class="button button-primary" type="submit">
+                <span>Make my portfolio</span><span class="button-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="reset-button" id="resetButton" type="button">Start fresh</button>
+              <p class="privacy-note"><span aria-hidden="true">♧</span> Your details stay in this browser until you download your site.</p>
+            </div>
+          </form>
+        </div>
+
+        <aside class="preview-panel" aria-label="Live portfolio preview">
+          <div class="preview-top">
+            <div>
+              <div class="step-label"><span>LIVE</span> &nbsp; THE FIRST LOOK</div>
+              <h2>Your portfolio</h2>
+            </div>
+            <span class="preview-badge"><span class="live-dot"></span> LIVE PREVIEW</span>
+          </div>
+          <div class="preview-frame">
+            <div class="browser-chrome" aria-hidden="true">
+              <div class="browser-dots"><i></i><i></i><i></i></div>
+              <span class="browser-address"><span>✳</span> yourname.portfoliobnao.site</span>
+              <span class="browser-menu">•••</span>
+            </div>
+            <iframe id="portfolioPreview" title="Live preview of your portfolio website" sandbox="allow-same-origin" referrerpolicy="no-referrer" loading="lazy"></iframe>
+          </div>
+          <div class="preview-bottom">
+            <span><span class="preview-check" aria-hidden="true">✓</span> Changes show up as you type</span>
+            <span class="preview-hint">YOUR SITE, YOUR STORY</span>
+          </div>
+          <div class="tip-card">
+            <span class="tip-icon" aria-hidden="true">✳</span>
+            <p><strong>A good portfolio feels like you.</strong><br>Start simple. You can always come back and add more.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="closing-note">
+        <span aria-hidden="true">✳</span>
+        <p>Thoughtfully made for people making things.</p>
+        <span class="closing-line"></span>
+        <p class="closing-brand">PORTFOLIO BNAO · 2026</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="footer-text">Portfolio Bnao — Create your portfolio in minutes</p>
+        <p class="footer-credit">Hosted by <strong>Shubham Verma</strong></p>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
