@@ -54,14 +54,13 @@ Your work is automatically saved to your browser as you type. You can:
 💡 **Note**: Saved drafts are stored locally in your browser. Clearing your browser's cache will remove them.
 
 ### Step 5: Download Your Portfolio
-Scroll to the bottom and click **"Make my portfolio"** to download your complete portfolio as a standalone HTML file. The file includes:
-- All your information and photo (embedded)
-- Professional styling
-- No dependencies on external servers
-- Fully functional offline
+Scroll to the bottom and click **"Make my portfolio"**, then choose **Download Portfolio ZIP**. The ZIP includes:
+- A self-contained `index.html` with your information, styling, and embedded photo
+- A `README.md` with local preview and deployment steps
+- No build tools or runtime dependencies
 
 ### Step 6: Share or Host
-Your downloaded portfolio file can be:
+Your downloaded portfolio ZIP can be:
 - Emailed to friends, recruiters, or employers
 - Uploaded to GitHub Pages (free hosting)
 - Hosted on any static hosting service (Netlify, Vercel, etc.)
@@ -131,14 +130,14 @@ A: Yes, you can always come back and edit your draft, then download an updated v
 **Q: What if I clear my browser cache?**  
 A: Your draft will be removed (it's stored locally in your browser). Keep backups of important portfolios!
 
-**Q: Can I host the HTML file on my own website?**  
-A: Absolutely! The generated HTML is self-contained. Upload it to any hosting service.
+**Q: Can I host the portfolio on my own website?**
+A: Absolutely! Extract the ZIP and upload its contents to any static hosting service.
 
 **Q: Is the portfolio mobile-friendly?**  
 A: Yes, your portfolio automatically adjusts to look great on phones, tablets, and desktops.
 
 **Q: Can I customize the design beyond color and font?**  
-A: The downloaded HTML file is pure HTML/CSS. Advanced users can edit it directly to customize further.
+A: The downloaded `index.html` is self-contained HTML/CSS. Advanced users can edit it directly to customize further.
 
 **Q: Is this a free service?**  
 A: Yes, 100% free forever. No accounts, no paid features, no surprises.

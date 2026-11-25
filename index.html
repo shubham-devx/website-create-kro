@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
@@ -11,8 +11,15 @@
     <meta http-equiv="Referrer-Policy" content="no-referrer-when-downgrade">
     <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), usb=()">
     <meta name="theme-color" content="#f8f7f3">
-    <meta name="description" content="Create a beautiful personal portfolio in minutes with Portfolio Bnao.">
-    <title>Portfolio Bnao — Make your portfolio yours</title>
+    <meta name="description" content="Create a polished, responsive portfolio website from your story, skills, experience, and selected work.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Website Create Kro">
+    <meta property="og:title" content="Website Create Kro — Build a portfolio that feels like yours">
+    <meta property="og:description" content="Create a polished, responsive portfolio website from your story, skills, experience, and selected work.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Website Create Kro — Build a portfolio that feels like yours">
+    <meta name="twitter:description" content="Create a polished, responsive portfolio website from your story, skills, experience, and selected work.">
+    <title>Website Create Kro — Build a portfolio that feels like yours</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -33,37 +40,7 @@
       </a>
       <nav class="topbar-actions" aria-label="Main navigation">
         <span class="save-status"><span class="status-dot"></span><span id="saveStatus">Your work saves automatically</span></span>
-        <div class="nav-dropdown">
-          <button class="text-link nav-dropdown-trigger" aria-label="Help menu" aria-expanded="false" aria-haspopup="menu">
-            Help & Docs <span aria-hidden="true">↓</span>
-          </button>
-          <div class="nav-dropdown-menu" role="menu" hidden>
-            <a href="#" class="dropdown-item" role="menuitem" data-action="scroll-to-builder">
-              <span class="item-title">Get Started</span>
-              <span class="item-desc">Quick steps to create your portfolio</span>
-            </a>
-            <a href="HOW_TO_USE.md" target="_blank" class="dropdown-item" role="menuitem">
-              <span class="item-title">📚 How to Use</span>
-              <span class="item-desc">Complete step-by-step guide</span>
-            </a>
-            <a href="README.md" target="_blank" class="dropdown-item" role="menuitem">
-              <span class="item-title">📖 README</span>
-              <span class="item-desc">Features & technical info</span>
-            </a>
-            <a href="SECURITY.md" target="_blank" class="dropdown-item" role="menuitem">
-              <span class="item-title">🔒 Security Info</span>
-              <span class="item-desc">Privacy & security practices</span>
-            </a>
-            <a href="SECURITY-AUDIT-REPORT.md" target="_blank" class="dropdown-item" role="menuitem">
-              <span class="item-title">📋 Security Audit</span>
-              <span class="item-desc">Detailed security report</span>
-            </a>
-            <a href="SECURITY-ENHANCEMENTS.md" target="_blank" class="dropdown-item" role="menuitem">
-              <span class="item-title">⚙️ Security Enhancements</span>
-              <span class="item-desc">What's been improved</span>
-            </a>
-          </div>
-        </div>
+        <a class="text-link nav-contact" href="mailto:mhn.technical.help7@gmail.com">Contact <span>mhn.technical.help7@gmail.com</span></a>
         <a class="text-link" href="#builder">Build <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
@@ -73,7 +50,7 @@
         <div class="intro-copy">
           <div class="eyebrow"><span class="eyebrow-line"></span> YOUR CORNER OF THE INTERNET</div>
           <h1 id="page-title">A little about you.<br><span>A lot to show.</span></h1>
-          <p>Turn what you do into a portfolio you’re proud to share. No code, no fuss — just you.</p>
+          <p>A considered portfolio for your work, your story, and what you want to do next.</p>
         </div>
         <div class="intro-note" aria-label="Three simple steps">
           <span class="note-sparkle" aria-hidden="true">✳</span>
@@ -108,7 +85,7 @@
             <div class="guide-card">
               <div class="guide-number">5</div>
               <h3>Download Your Portfolio</h3>
-              <p>Click "Make my portfolio" at the bottom to download a complete HTML file. Open it anywhere—no server needed.</p>
+              <p>Click "Make my portfolio" to prepare your site, then download the standalone website ZIP. Open its index.html anywhere—no build tools needed.</p>
             </div>
             <div class="guide-card">
               <div class="guide-number">6</div>
@@ -130,7 +107,7 @@
             <span class="edit-icon" aria-hidden="true">✎</span>
           </div>
 
-          <form id="portfolioForm">
+      <form id="portfolioForm">
             <div class="field-row">
               <label class="field">
                 <span>Your name <span class="required">*</span></span>
@@ -287,6 +264,22 @@
               </label>
             </fieldset>
             <label class="field font-field">
+              <span>Art direction</span>
+              <select name="design">
+                <option value="auto">Choose for me</option>
+                <option value="awwwards">Awwwards Creative</option>
+                <option value="apple">Apple Minimal</option>
+                <option value="cinematic">Cinematic Dark</option>
+                <option value="swiss">Swiss Editorial</option>
+                <option value="brutalist">Neo Brutalist</option>
+                <option value="luxury">Luxury Personal Brand</option>
+                <option value="developer">Modern Developer</option>
+                <option value="designer">Creative Designer</option>
+                <option value="future">Futuristic 3D</option>
+                <option value="bento">Interactive Bento</option>
+              </select>
+            </label>
+            <label class="field font-field">
               <span>Portfolio font</span>
               <select name="font">
                 <option value="modern">Modern sans</option>
@@ -294,6 +287,24 @@
                 <option value="classic">Classic clean</option>
                 <option value="mono">Modern mono</option>
               </select>
+            </label>
+
+            <div class="section-divider">
+              <span class="step-label"><span>06</span> &nbsp; SEARCH & SHARING</span>
+              <span class="divider-line"></span>
+            </div>
+            <label class="field">
+              <span>Search title <span class="muted-label">(optional, up to 60 characters)</span></span>
+              <input name="seoTitle" type="text" maxlength="60" placeholder="Defaults to your name and occupation">
+            </label>
+            <label class="field">
+              <span>Search description <span class="muted-label">(optional, up to 160 characters)</span></span>
+              <textarea name="seoDescription" rows="2" maxlength="160" placeholder="Defaults to your professional summary"></textarea>
+            </label>
+            <label class="field">
+              <span>Published portfolio URL <span class="muted-label">(optional)</span></span>
+              <input name="canonicalUrl" type="url" maxlength="200" placeholder="https://your-domain.com">
+              <span class="field-hint">Use the final public HTTPS address. This enables your canonical link and sitemap.</span>
             </label>
 
             <div class="form-footer">
@@ -331,6 +342,62 @@
             <p><strong>A good portfolio feels like you.</strong><br>Start simple. You can always come back and add more.</p>
           </div>
         </aside>
+      </section>
+
+      <dialog class="registration-dialog" id="registrationDialog" aria-labelledby="registrationTitle">
+        <div class="registration-heading">
+          <div>
+            <span class="step-label"><span>OPTIONAL DETAILS</span> &nbsp; CONTINUE TO YOUR PORTFOLIO</span>
+            <h2 id="registrationTitle">Register or export your portfolio</h2>
+            <p>Share your contact details if you’d like us to follow up. You can also skip registration and export directly.</p>
+          </div>
+          <button class="registration-close" id="closeRegistration" type="button" aria-label="Close registration">×</button>
+        </div>
+        <form id="registrationForm">
+          <div class="registration-grid">
+            <label class="field"><span>Name</span><input name="name" type="text" autocomplete="name" maxlength="80" required></label>
+            <label class="field"><span>Occupation</span><input name="occupation" type="text" autocomplete="organization-title" maxlength="100" required></label>
+            <label class="field"><span>College or company</span><input name="organization" type="text" autocomplete="organization" maxlength="120" required></label>
+            <label class="field"><span>Email</span><input name="email" type="email" autocomplete="email" maxlength="120" required></label>
+            <label class="field"><span>Mobile number</span><input name="mobile" type="tel" autocomplete="tel" maxlength="30" required></label>
+            <label class="field"><span>Country</span><input name="country" type="text" list="countryOptions" autocomplete="country-name" maxlength="80" required></label>
+            <label class="field"><span>City</span><input name="city" type="text" autocomplete="address-level2" maxlength="80" required></label>
+          </div>
+          <datalist id="countryOptions">
+            <option value="India"><option value="United States"><option value="United Kingdom"><option value="Canada"><option value="Australia"><option value="United Arab Emirates"><option value="Singapore"><option value="Germany"><option value="France"><option value="Japan"><option value="Brazil"><option value="South Africa"><option value="New Zealand"><option value="Pakistan"><option value="Bangladesh"><option value="Nepal"><option value="Sri Lanka"><option value="Other">
+          </datalist>
+          <label class="field captcha-field"><span id="captchaQuestion">What is 4 + 7?</span><input name="captchaAnswer" id="captchaAnswer" type="number" inputmode="numeric" placeholder="Your answer" required></label>
+          <input class="registration-honeypot" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="registration-privacy">Submitting sends these details to mhn.technical.help7@gmail.com for follow-up. Details are not saved in your portfolio draft.</p>
+          <p class="registration-error" id="registrationError" role="alert" hidden></p>
+          <div class="registration-actions">
+            <button class="button button-primary" id="registerAndExport" type="submit">Register &amp; continue <span aria-hidden="true">↗</span></button>
+            <button class="registration-skip" id="skipRegistration" type="button">Export without registering</button>
+          </div>
+        </form>
+      </dialog>
+
+      <section class="export-section" id="portfolioExport" aria-labelledby="exportHeading" hidden>
+        <div class="export-heading">
+          <span class="step-label"><span>READY</span> &nbsp; YOUR PORTFOLIO</span>
+          <h2 id="exportHeading">Your portfolio is ready to take with you.</h2>
+          <p>Download the complete website as a ZIP. It includes your portfolio page and a README with setup and deployment instructions.</p>
+        </div>
+        <button class="button button-primary export-download" id="downloadPortfolioZip" type="button">
+          <span>Download Portfolio ZIP</span><span class="button-arrow" aria-hidden="true">↓</span>
+        </button>
+        <article class="deployment-card">
+          <div class="deployment-copy">
+            <span class="deployment-kicker">OPTIONAL · PERSONAL DEPLOYMENT SUPPORT</span>
+            <h3>Want to Make Your Portfolio Live?</h3>
+            <p>Need help deploying your portfolio, connecting a custom domain, or making your website live? Get professional assistance.</p>
+            <a class="deployment-email" href="mailto:mhn.technical.help7@gmail.com">mhn.technical.help7@gmail.com</a>
+          </div>
+          <div class="deployment-actions">
+            <a class="button deployment-button" href="mailto:mhn.technical.help7@gmail.com?subject=Portfolio%20Deployment%20Assistance">Contact for Deployment <span aria-hidden="true">↗</span></a>
+            <button class="copy-email-button" id="copyDeploymentEmail" type="button">Copy email</button>
+          </div>
+        </article>
       </section>
 
       <section class="closing-note">
